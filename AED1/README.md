@@ -1,3 +1,8 @@
+# Recursos úteis:
++ Bilbiotecas io.h e io.hpp do Theldo. Recomendo estudar inteiras
++ Bibliotecas LibAD.h e LibAD.hpp presentes nessa pasta. Contém funções, classes e definições úteis para a disciplina
++ Meu repositório de [AED1](https://github.com/antoniodrumond/AED1) **NAO COPIE, USE COMO REFERÊNCIA DE APRENDIZADO**
+
 ## Loops
 + ``for(comando inicial; verificação pré execuções; comando repetido após cada execução){ ... }``
 + ``while(verificação pré execuções){ ... }``
