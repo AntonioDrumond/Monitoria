@@ -16,5 +16,5 @@ Formato | Tipo
 + ``malloc(int n * sizeof(tipo);``
 	+ Aloca espaço na memória RAM, equivalente a *n* vezes o tamanho em bytes do tipo desejado
 	+ Retorna o ponteiro (endereço na memória) do espaço alocado
-+ ``free(ponteiro);
++ ``free(ponteiro);``
 	+ Libera o espaço ocupado pelo ponteiro
