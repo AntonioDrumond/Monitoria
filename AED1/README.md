@@ -11,11 +11,12 @@
 ## Formatação de texto
 Formato | Tipo
 -- | --
-%s | texto(string
-%c | caractere
-%d | inteiros
-%lf | numeros reais
-%p | endereços de memória(ponteiros)
+%s | texto (string)
+%c | caracteres (char)
+%d | inteiros (int)
+%lf | numeros reais (double)
+%f | numeros reais (float)
+%p | endereços de memória (ponteiros)
 
 ## Comandos úteis:
 + ``malloc(int n * sizeof(tipo);``
