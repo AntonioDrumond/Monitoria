@@ -19,6 +19,13 @@ Formato | Tipo
 %f | numeros reais (float)
 %p | endereços de memória (ponteiros)
 
+Caractere | Nome | Explicacao
+-- | -- | --
+\0 | Caractere nulo | Fim da cadeia de caracteres
+\n | Nova linha | ...
+\t | Tabulacao vertical | ...
+\a | Beep | Emite um bipe
+
 ## Comandos úteis:
 + ``malloc(int n * sizeof(tipo);``
 	+ Aloca espaço na memória RAM, equivalente a *n* vezes o tamanho em bytes do tipo desejado
