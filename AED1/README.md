@@ -77,10 +77,3 @@ Caractere | Nome | Explicacao
 \n | Nova linha | ...
 \t | Tabulacao vertical | ...
 \a | Beep | Emite um bipe
-
-## Comandos úteis:
-+ ``malloc(int n * sizeof(tipo);``
-	+ Aloca espaço na memória RAM, equivalente a *n* vezes o tamanho em bytes do tipo desejado
-	+ Retorna o ponteiro (endereço na memória) do espaço alocado
-+ ``free(ponteiro);``
-	+ Libera o espaço ocupado pelo ponteiro
