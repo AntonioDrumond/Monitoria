@@ -18,3 +18,10 @@
 + Retornar verdadeiro se o primeiro estiver dentro do intervalo dos outros dois, falso caso contrário.
 + Dentro da função, mostrar na tela todos os numeros inteiros dentro do intervalo.
 + **Restrições:** Retornar falso para indicar erro caso o limite inferior for maior que o superior, e printar "ERRO" na tela.
+### 4.) Método do "quadrado"
++ Criar um método que receba o *endereço* de um double, e mude seu valor para o quadrado desse número, sem retornar nada.
++ **Restrições:** Deve ser um método de tipo void, sem retorno
+### 5.) R + L = J
++ Criar uma função que receba, como string, uma equação do tipo "R+L=J", com uma variavel faltando, e retorne o valor dela.
++ **Exemplos:** Entrada "3+8=J" retorna 11 | Entrada "5+L=5" retorna 0 | Entrada "R+7=5" retorna -2
++ **Restrições:** Receber a string como um ponteiro de char
