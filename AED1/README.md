@@ -6,6 +6,23 @@
 + ``for(comando inicial; verificação pré execuções; comando repetido após cada execução){ ... }``
 + ``while(verificação pré execuções){ ... }``
 + ``do{ ... } while(verificação pós execuções);``
+## Formatação de texto
+| Formato | Tipo                             |
+| ------- | -------------------------------- |
+| %s      | texto (string)                   |
+| %c      | caracteres (char)                |
+| %d      | inteiros (int)                   |
+| %lf     | numeros reais (double)           |
+| %f      | numeros reais (float)            |
+| %p      | endereços de memória (ponteiros) |
+
+Caractere | Nome | Explicacao
+-- | -- | --
+\0 | Caractere nulo | Fim da cadeia de caracteres
+\n | Nova linha | ...
+\t | Tabulacao vertical | ...
+\a | Beep | Emite um bipe
+
 ## Variáveis
 + Variáveis são como caixinhas, que guardam valores e informações
 + Elas ocupam um espaço em *bytes* na memória do computador.
@@ -61,19 +78,27 @@ arr[9] = 98; // Esse espaço pode ser acessado como um arranjo normal.
 free(arr);
 ```
 
-## Formatação de texto
-| Formato | Tipo                             |
-| ------- | -------------------------------- |
-| %s      | texto (string)                   |
-| %c      | caracteres (char)                |
-| %d      | inteiros (int)                   |
-| %lf     | numeros reais (double)           |
-| %f      | numeros reais (float)            |
-| %p      | endereços de memória (ponteiros) |
+## Arquivos
++ Para interagir com arquivos em C, precisamos, primeiro, abrir o arquivo para leitura ou escrita.
++ As alterações só são salvas no momento que o arquivo for fechado.
++ Interagir com o arquivo é praticamente igual à entrada padrão, com as funções fprintf(), fscanf(), fgets(), etc.
+```c
+//______ Escrita ______
+FILE* arq; // Criamos o ponteiro de arquivo "arq"
+arq = fopen("dados.txt", "wt"); // Abrimos para escrita, com "wt"
+fprintf(arq, "1 2 3 4 5\nteste"); // Gravamos dados de teste no arquivo
+fclose(arq); // Fechamos o arquivo, para salvar as mudanças
 
-Caractere | Nome | Explicacao
--- | -- | --
-\0 | Caractere nulo | Fim da cadeia de caracteres
-\n | Nova linha | ...
-\t | Tabulacao vertical | ...
-\a | Beep | Emite um bipe
+//______ Leitura ______
+arq = fopen("dados.txt", "rt"); // Abrimos para leitura
+int first = 0;
+fscanf("%d", &first); // Lemos o primeiro numero contido em "dados.txt"
+printf("Primeiro numero lido: %d\n", first); // Printamos o numero
+fclose(arq); // Fechamos o arquivo
+```
+### Modos de abertura de arquivo:
+| **Leitura**                | **Gravação**                            |
+| -------------------------- | --------------------------------------- |
+| "rt" -> Leitura de texto   | "wt" -> Escrita de texto                |
+| "rb" -> Leitura em binário | "wb" -> Escrita em binário              |
+|                            | "a" -> Escrever em arquivo sem apagá-lo |
