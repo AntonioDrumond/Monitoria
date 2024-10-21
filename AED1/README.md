@@ -92,7 +92,7 @@ fclose(arq); // Fechamos o arquivo, para salvar as mudanças
 //______ Leitura ______
 arq = fopen("dados.txt", "rt"); // Abrimos para leitura
 int first = 0;
-fscanf("%d", &first); // Lemos o primeiro numero contido em "dados.txt"
+fscanf(arq, "%d", &first); // Lemos o primeiro numero contido em "dados.txt"
 printf("Primeiro numero lido: %d\n", first); // Printamos o numero
 fclose(arq); // Fechamos o arquivo
 ```
