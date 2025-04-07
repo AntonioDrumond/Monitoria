@@ -13,8 +13,12 @@
 Primeiro, negamos duas vezes a porta que desejamos obter.
 
 - `( a . b ) = ( a . b )''`
-  Depois, utilizamos a Lei de DeMorgan para aplicar uma das negações:
+
+Depois, utilizamos a Lei de DeMorgan para aplicar uma das negações:
 - `( a . b )'' = ( a' + b' )'`
-  Como temos `(X+Y)'`, podemos reconhecer a porta NOR (Pois há uma operação OR negada)
-  Logo, para obter a porta AND a partir de NORs, basta negar os inputs da NOR
-  \*\*Deduções de todas as portas no arquivo [./Portas_Com_NAND_e_NOR.circ] desse repositório.\*\*
+
+Como temos `(X+Y)'`, podemos reconhecer a porta NOR (Pois há uma operação OR negada)
+
+Logo, para obter a porta AND a partir de NORs, basta negar os inputs da NOR
+
+**Deduções de todas as portas no arquivo [Portas_Com_NAND_e_NOR.circ](./Portas_Com_NAND_e_NOR.circ)**
