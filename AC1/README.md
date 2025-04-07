@@ -15,6 +15,7 @@ Primeiro, negamos duas vezes a porta que desejamos obter.
 - `( a . b ) = ( a . b )''`
 
 Depois, utilizamos a Lei de DeMorgan para aplicar uma das negações:
+
 - `( a . b )'' = ( a' + b' )'`
 
 Como temos `(X+Y)'`, podemos reconhecer a porta NOR (Pois há uma operação OR negada)
