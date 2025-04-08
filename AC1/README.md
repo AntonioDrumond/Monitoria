@@ -5,7 +5,7 @@
 ### Montar o mapa
 
 - Mapa de 3 variáveis
-<img href="img/Montar_Karnaugh1.png">
+<img href="./img/Montar_Karnaugh1.png">
 
 - Mapa de 4 variáveis
 <img href="img/Montar_Karnaugh2.png">
