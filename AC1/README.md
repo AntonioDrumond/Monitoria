@@ -1,5 +1,16 @@
 # Arquitetura de Computadores 1
 
+## Mapa de Karnaugh
+
+### Montar o mapa
+
+- Mapa de 3 variáveis
+<img href="img/Montar_Karnaugh1.png">
+
+- Mapa de 4 variáveis
+<img href="img/Montar_Karnaugh2.png">
+
+
 ## Universalidade das portas NAND e NOR
 
 ### Lei de DeMorgan
