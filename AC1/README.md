@@ -6,6 +6,7 @@
 ## Sumário
 - [Mapa de Karnaugh](#Mapa-de-Karnaugh)
 - [Universalidade das portas NAND e NOR](#Universalidade-das-portas-NAND-e-NOR)
+- [Somadores e Subtratores](#Somadores-e-Subtratores)
 
 ## Mapa de Karnaugh
 
@@ -64,3 +65,10 @@ Como temos `(X+Y)'`, podemos reconhecer a porta NOR (Pois há uma operação OR 
 Logo, para obter a porta AND a partir de NORs, basta negar os inputs da NOR
 
 **Deduções de todas as portas no arquivo [Portas_Com_NAND_e_NOR.circ](./Portas_Com_NAND_e_NOR.circ)**
+
+## Somadores e Subtratores
+
+- A ideia é primeiro criar um "meio somador" ou "meio subtrator", que pode ser deduzido a partir da tabela verdade de uma soma ou subtração.
+- Após criar a "meia" versão que recebe e retorna 2 bits, encadeamos duas metades para criar um somador/subtrator completo, ou somador/subtrator de 1 bit (Que recebe 3 bits e retorna 2)
+- Tendo criado o somador/subtrator completo, basta encadear múltiplos para criar um somador/subtrator de N bits.
+- **Exemplos de todos esses circuitos podem ser encontrados no arquivo [Somadores_Subtratores.circ](./Somadores_Subtratores.circ)**
