@@ -12,10 +12,10 @@
 ### 1) Montar o mapa
 
 - Mapa de 3 variáveis
-<img src="./img/Montar_Karnaugh1.png">
+<img src="./img/Montar_Karnaugh1.png" width=500>
 
 - Mapa de 4 variáveis
-<img src="img/Montar_Karnaugh2.png">
+<img src="img/Montar_Karnaugh2.png" width=500>
 
 ### 2) Montar grupos
 
@@ -27,7 +27,7 @@
 	- Retangulares (Sem formatos estranhos ou curvas)
 	- Conter como número de elementos uma potência de 2 (1, 2, 4, 8...)
 
-<img src="./img/Karnaugh_Grupos1.png">
+<img src="./img/Karnaugh_Grupos1.png" width=500>
 
 ### 3) Montar a expressão a partir dos grupos
 - Note que houve uma sobreposição entre os grupos. Isso não é um problema. Se fosse possível formar uma dupla com o mintermo 2 sem sobrepor a quadra, isso seria ideal.
