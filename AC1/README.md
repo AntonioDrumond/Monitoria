@@ -7,6 +7,8 @@
 - [Mapa de Karnaugh](#Mapa-de-Karnaugh)
 - [Universalidade das portas NAND e NOR](#Universalidade-das-portas-NAND-e-NOR)
 - [Somadores e Subtratores](#Somadores-e-Subtratores)
+- [Multiplexadores](#Multiplexadores)
+- [Demultiplexadores](#Demultiplexadores)
 
 ## Mapa de Karnaugh
 
