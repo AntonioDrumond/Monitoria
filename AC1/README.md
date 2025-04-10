@@ -96,15 +96,47 @@ Além disso, a porta `OR` é capaz de unificar todas as entradas em uma única s
 
 O tamanho da chave **em bits** dita a quantidade máxima de entradas que é capaz de gerenciar. Neste exemplo, temos uma chave de tamanho de 1 bit, assim gerenciando $2^1$ entradas.
 
-No geral, uma chave seletora de N bits é capaz de controlar $2^N$ entradas. Vejamos um exemplo onde a chave possui tamanho de 2 bits.
+No geral, uma chave seletora de N bits é capaz de gerenciar $2^N$ entradas. Vejamos um exemplo onde a chave possui tamanho de 2 bits.
 
 <img src="img/Mux2.png" width=500>
 
 Tabela de saída:
 
-| Chave | Saída     |
-| ----- | --------- |
-| 00    | Entrada 1 |
-| 01    | Entrada 2 |
-| 10    | Entrada 3 |
-| 11    | Entrada 4 |
+| Chave 2 | Chave 1 | Saída     |
+| ------- | ------- | --------- |
+| 0       | 0       | Entrada 1 |
+| 0       | 1       | Entrada 2 |
+| 1       | 0       | Entrada 3 |
+| 1       | 1       | Entrada 4 |
+
+## Demultiplexadores
+
+_Uma entrada para várias saídas._
+
+Diferente dos multiplexadores, os demultiplexadores permitem a escolha de uma saída dentre várias para propagar o sinal da entrada.
+
+<img src="img/Demux1.png" width=500>
+
+Tabela de saída:
+
+| Chave | Saída 1 | Saída 2 |
+| ----- | ------- | ------- |
+| 0     | Entrada | 0       |
+| 1     | 0       | Entrada |
+
+As portas `AND` são usadas com o mesmo intuito dos multiplexadores, e dessa vez não há porta `OR`, pois em nenhum momento precisamos concentrar múltiplas entradas em uma única saída.
+
+O tamanho da chave **em bits** dita a quantidade máxima de saídas que é capaz de gerenciar. Assim como nos multiplexadores, uma chave de N bits é capaz de gerenciar $2^N$ saídas.
+
+Vejamos um demultiplexador com chave seletora de 2 bits:
+
+<img src="img/Demux2.png" width=500>
+
+Tabela de saída:
+
+| Chave 2 | Chave 1 | Saída 1 | Saída 2 | Saída 3 | Saída 4 |
+| ------- | ------- | ------- | ------- | ------- | ------- |
+| 0       | 0       | Entrada | 0       | 0       | 0       |
+| 0       | 1       | 0       | Entrada | 0       | 0       |
+| 1       | 0       | 0       | 0       | Entrada | 0       |
+| 1       | 1       | 0       | 0       | 0       | Entrada |
