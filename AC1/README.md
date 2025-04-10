@@ -68,7 +68,42 @@ Logo, para obter a porta AND a partir de NORs, basta negar os inputs da NOR
 
 ## Somadores e Subtratores
 
+### Fundamentos
+
 - A ideia é primeiro criar um "meio somador" ou "meio subtrator", que pode ser deduzido a partir da tabela verdade de uma soma ou subtração.
 - Após criar a "meia" versão que recebe e retorna 2 bits, encadeamos duas metades para criar um somador/subtrator completo, ou somador/subtrator de 1 bit (Que recebe 3 bits e retorna 2)
 - Tendo criado o somador/subtrator completo, basta encadear múltiplos para criar um somador/subtrator de N bits.
 - **Exemplos de todos esses circuitos podem ser encontrados no arquivo [Somadores_Subtratores.circ](./Somadores_Subtratores.circ)**
+
+## Multiplexadores
+
+_Várias entradas para uma saída._
+
+Os multiplexadores permitem a escolha de uma entrada dentre várias para ser propagada para a saída por meio de uma chave seletora:
+
+![[Mux1.png]]
+
+Vejamos a tabela da saída:
+
+| Chave | Saída     |
+| ----- | --------- |
+| 0     | Entrada 1 |
+| 1     | Entrada 2 |
+Perceba que a porta lógica `AND` bloqueia a passagem da entrada enquanto a chave não assumir um valor específico.
+
+Além disso, a porta `OR` é capaz de unificar todas as entradas em uma única saída. Isso acontece pois ela propaga qualquer valor binário `1` que chegar em qualquer uma de suas entradas. Se sua saída corresponder ao valor binário `0`, significa que nenhuma entrada assumiu um valor diferente.
+
+O tamanho da chave **em bits** dita a quantidade máxima de entradas que é capaz de gerenciar. Neste exemplo, temos uma chave de tamanho de 1 bit, assim gerenciando $2^1$ entradas.
+
+No geral, uma chave seletora de N bits é capaz de controlar $2^N$ entradas. Vejamos um exemplo onde a chave possui tamanho de 2 bits.
+
+![[Mux2.png]]
+
+Tabela de saída:
+
+| Chave | Saída     |
+| ----- | --------- |
+| 00    | Entrada 1 |
+| 01    | Entrada 2 |
+| 10    | Entrada 3 |
+| 11    | Entrada 4 |
