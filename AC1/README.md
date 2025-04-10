@@ -81,7 +81,7 @@ _Várias entradas para uma saída._
 
 Os multiplexadores permitem a escolha de uma entrada dentre várias para ser propagada para a saída por meio de uma chave seletora:
 
-![[Mux1.png]]
+<img src="img/Mux1.png" width=500>
 
 Vejamos a tabela da saída:
 
@@ -89,6 +89,7 @@ Vejamos a tabela da saída:
 | ----- | --------- |
 | 0     | Entrada 1 |
 | 1     | Entrada 2 |
+
 Perceba que a porta lógica `AND` bloqueia a passagem da entrada enquanto a chave não assumir um valor específico.
 
 Além disso, a porta `OR` é capaz de unificar todas as entradas em uma única saída. Isso acontece pois ela propaga qualquer valor binário `1` que chegar em qualquer uma de suas entradas. Se sua saída corresponder ao valor binário `0`, significa que nenhuma entrada assumiu um valor diferente.
@@ -97,7 +98,7 @@ O tamanho da chave **em bits** dita a quantidade máxima de entradas que é capa
 
 No geral, uma chave seletora de N bits é capaz de controlar $2^N$ entradas. Vejamos um exemplo onde a chave possui tamanho de 2 bits.
 
-![[Mux2.png]]
+<img src="img/Mux2.png" width=500>
 
 Tabela de saída:
 
